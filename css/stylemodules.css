@@ -13,32 +13,7 @@ body {
     font-size: var(--base-font-size);
 
 }
-/* Custom styles for the sidebar */
-#sidebarMenu.sidebar {
-    background-color: #f8f9fa;
-    border-right: 1px solid #dee2e6;
-    z-index: 1050;
-    transition: width 0.35s ease-in-out;
-}
 
-#sidebarMenu.collapsing,
-#sidebarMenu.collapse:not(.show) {
-    overflow: hidden;
-}
-
-#sidebarMenu .logo-container,
-#sidebarMenu .nav-menu,
-#sidebarMenu .sidebar-footer {
-    min-width: 250px;
-}
-
-/* Toggle button styling */
-#sidebarToggle {
-    position: fixed;
-    top: 15px;
-    left: 15px;
-    z-index: 1051;
-}
 
 .lesson-card {
     border-radius: 20px;
