@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klar AI Platform - Senior Accessible</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylelearning.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!------    NAV BUTTON    ------>
+<button id="sidebarToggle" class="btn btn-klar-primary" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-expanded="false" aria-controls="sidebarMenu">
+    <i class="bi bi-list fs-2"></i>
+</button>
+<!------    NAV BUTTON END    ------>
+
+
+<!------    NAVBAR   ------>
+<nav id="sidebarMenu" class="collapse collapse-horizontal sidebar vh-100 p-3 position-fixed top-0 start-0" style="width: 280px;" aria-label="Main navigation">
+    <div class="logo-container d-flex align-items-center">
+        <img src="images/Rectangle%2064.svg" height="100px" width="100px"/>
+        <div>
+            <span class="logo-text">Klar</span>
+            <p class="mb-0"><b>Læring for Seniorer</b></p>
+        </div>
+    </div>
+    <!------    NAVBAR LIST  ------>
+    <ul class="nav flex-column nav-menu mt-3">
+        <!---    NAVBAR ITEM  --->
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">
+                <i class="bi bi-house-door-fill me-2"></i>Hjem
+            </a>
+        </li>
+        <!---    NAVBAR ITEM  --->
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <i class="bi bi-bar-chart-line-fill me-2"></i>Mine Fremskridt
+            </a>
+        </li>
+        <!---    NAVBAR ITEM  --->
+        <li class="nav-item active">
+            <a class="nav-link" href="#">
+                <i class="bi bi-collection-play-fill me-2"></i>Mine Moduler
+            </a>
+        </li>
+        <!---    NAVBAR ITEM  --->
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <i class="bi bi-gear-fill me-2"></i>Instillinger
+            </a>
+        </li>
+    </ul>
+
+    <!------    NAVBAR LIST  ------>
+    <div class="sidebar-footer mt-auto">
+        <ul class="nav flex-column">
+            <!---    NAVBAR ITEM  --->
+            <li class="nav-item">
+                <a class="nav-link logout" href="#">
+                    <i class="bi bi-box-arrow-right me-2"></i>Log Ud
+                </a>
+            </li>
+            <!---    NAVBAR ITEM  --->
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="bi bi-question-circle-fill me-2"></i>Hjælp & Info
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!------    NAVBAR END   ------>
+
+
+<!------    HEADER   ------>
+<div class="page-content-wrapper">
+    <main class="main-content-area" role="main">
+        <header class="lesson-header p-3 p-md-4 border-bottom">
+            <h1 class="h2 mb-0 lesson-page-main-title">
+                <i class="bi bi-compass-fill me-2"></i>Ting du skal vide
+            </h1>
+        </header>
+        <!---    BANNER   --->
+        <div class="lesson-content-scroll-wrapper">
+            <div class="lesson-banner">
+                <img src="images/Banner01.jpg" class="img-fluid w-100" alt="Abstrakt baggrundsbillede for lektion">
+            </div>
+            <!--- PROGRESSBAR --->
+            <div class="lesson-progress px-3 px-md-4 py-3 mb-3">
+                <p class="progress-label mb-1 text-center fw-semibold">Du er her:</p>
+                <div class="progress" role="progressbar" aria-label="Lektionsfremskridt" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="height: 1.25rem;">
+                    <div class="progress-bar fw-semibold" style="width: 10%; background-color: var(--klar-progress-bar-color);">
+                        10%
+                    </div>
+                </div>
+            </div>
+            <!------    HEADER END  ------>
+
+
+            <!------    TEXT HEADER   ------>
+            <div class="lesson-body p-3 p-md-4 mb-4">
+                <h2 class="h3 mb-2 lesson-title-main">Lektion 0.1: Burgermenuen og Smarte Ord</h2>
+                <p class="lead text-body-secondary mb-4">Lær hvordan du nemt finder rundt, og hvordan du får hjælp til nye ord.</p>
+
+                <div class="row align-items-stretch g-4 mb-5">
+                    <div class="col-md-6 d-flex">
+                        <div class="lesson-media-box border rounded p-3 bg-light-subtle text-center flex-fill" style="min-height: 280px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+                            <i class="bi bi-list display-1 text-primary" aria-hidden="true" style="font-size: 6rem !important;"></i>
+                            <p class="mt-4 text-muted">Dette ikon kaldes ofte en "burgermenu".</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex">
+                        <div class="lesson-text-box p-3 flex-fill">
+                            <h4 class="h5 mb-3 text-body-emphasis">Hvad er en Burgermenu?</h4>
+                            <p class="mb-3">Har du nogensinde set et ikon, der ligner tre vandrette streger <i class="bi bi-list"></i>, ofte placeret i et hjørne af en hjemmeside eller app? Det kaldes en <span class="text-decoration-underline fw-semibold" data-tippy-content="En menu, der er skjult bag et ikon (ofte tre streger), og som åbner, når du klikker eller trykker på det.">burgermenu</span>.</p>
+                            <p class="mb-3">Når du klikker eller trykker på den, åbner den sig og viser en liste over <span class="text-decoration-underline fw-semibold" data-tippy-content="Forskellige sektioner eller sider, du kan besøge på hjemmesiden eller i appen.">navigationsmuligheder</span> – ligesom menuen her på Klar, som du åbnede for at komme hertil!</p>
+                            <p>Den hjælper med at holde designet rent og <span class="text-decoration-underline fw-semibold" data-tippy-content="Let at finde rundt i og bruge, uden for mange forstyrrende elementer.">brugervenligt</span>, især på mindre skærme som telefoner og tablets.</p>
+
+                            <h4 class="h5 mt-4 mb-3 text-body-emphasis">Smarte Ord med Forklaringer</h4>
+                            <p class="mb-3">Her på Klar vil du nogle gange se ord, der er <span class="text-decoration-underline fw-semibold" data-tippy-content="Markeret med en streg underneden for at vise, at der er ekstra information.">understreget</span>, ligesom dette ord.</p>
+                            <p class="mb-3">Hvis du fører <span class="text-decoration-underline fw-semibold" data-tippy-content="Den lille pil eller markør, du styrer med din computermus.">musemarkøren</span> hen over disse ord og holder den stille et øjeblik, vil en lille boks med en forklaring dukke op. Prøv det!</p>
+                            <p>Dette kaldes et <span class="text-decoration-underline fw-semibold" data-tippy-content="En lille informationsboks, der automatisk vises, når du peger på et element med musen. Bruges til at give korte forklaringer.">tooltip</span>, og det er en nem måde at få hurtig hjælp til nye begreber, uden at skulle slå dem op andre steder.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------    TEXT HEADER   ------>
+
+            
+            <!------    BOTTOM NAV   ------>
+            <nav class="lesson-navigation p-3 p-md-4 border-top bg-light-subtle">
+                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
+                    <a href="#" class="btn btn-klar-primary px-4 py-2 order-sm-last w-100 w-sm-auto"> <i class="bi bi-grid-3x3-gap-fill me-2"></i>Tilbage til Moduler</a>
+                    <a href="#" class="btn btn-outline-secondary disabled w-100 w-sm-auto"> <i class="bi bi-arrow-left me-1"></i>Forrige lektion</a>
+                    <a href="#" class="btn btn-secondary w-100 w-sm-auto"> Næste lektion<i class="bi bi-arrow-right ms-1"></i></a>
+                </div>
+            </nav>
+            <!------    BOTTOM NAV END   ------>
+        </div>
+    </main>
+</div>
+<!------    SCRIPTS   ------>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>
+    tippy('[data-tippy-content]');
+</script>
+<!------    SCRIPTS END   ------>
+</body>
+</html>
