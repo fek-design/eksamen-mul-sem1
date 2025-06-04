@@ -17,25 +17,36 @@ body {
 
 .lesson-card {
     border-radius: 20px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.2s ease-in-out;
 }
+
 .lesson-card:hover {
     transform: scale(1.02);
 }
+
 .card-img-top {
-    height: 160px;
+    height: 250px;
     object-fit: cover;
 }
+
 .badge-status {
     font-size: 0.9rem;
 }
+
 .btn {
     font-size: 1rem;
     padding: 0.5rem 1rem;
 }
+
 .card-title {
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+/* Style for Inactive Cards */
+.inactive-card {
+    filter: brightness(0.6) grayscale(0.3);
+
 }
